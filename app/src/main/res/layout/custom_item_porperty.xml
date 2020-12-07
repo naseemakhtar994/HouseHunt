@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="6dp"
+    android:layout_margin="10dp"
+
+    app:cardCornerRadius="6dp"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:scaleType="fitXY"
+        android:background="@drawable/add_image"
+        android:layout_height="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="30dp">
+
+           <TextView
+               android:id="@+id/textViewTitle"
+               android:layout_width="0dp"
+               android:layout_weight=".1"
+               android:text="Title"
+               android:textColor="#000"
+
+               android:textSize="20sp"
+               android:textStyle="bold"
+               android:layout_height="wrap_content"/>
+
+
+           <TextView
+               android:id="@+id/textViewPrice"
+
+               android:layout_width="wrap_content"
+               android:text="£100"
+               android:textSize="20sp"
+               android:textColor="#000"
+               android:textStyle="bold"
+
+               android:layout_height="wrap_content"/>
+
+       </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:text="Title"
+            android:textColor="#000"
+
+            android:textSize="17sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textViewType"
+android:gravity="start"
+            android:layout_width="wrap_content"
+            android:text="Title"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textViewDescription"
+
+            android:layout_width="wrap_content"
+            android:text="Title"
+            android:textSize="17sp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

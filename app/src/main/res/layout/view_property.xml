@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+  <EditText
+      android:id="@+id/edit_query"
+      android:layout_width="match_parent"
+      android:background="@drawable/border"
+      android:layout_margin="10dp"
+      android:padding="10dp"
+      android:hint="Search"
+      android:layout_height="wrap_content"/>
+  <LinearLayout
+      android:id="@+id/layoutFlter"
+      android:layout_width="match_parent"
+      android:gravity="center"
+      android:padding="10dp"
+      android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/buttonLowtoHigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:textColor="#fff"
+android:textSize="15sp"
+        android:padding="15dp"
+        android:background="@drawable/unselected_buttonborder"
+        android:text="Price : Low to High" />
+
+    <Button
+        android:id="@+id/buttonHighToLow"
+        android:background="@drawable/unselected_buttonborder"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:text="Price : High to Low"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:padding="15dp"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/buttonCategories"
+      android:background="@drawable/unselected_buttonborder"
+      android:layout_margin="5dp"
+      android:textColor="#fff"
+      android:layout_width="200dp"
+      android:text="Categories"
+      android:textSize="15sp"
+      android:onClick="showCategories"
+      android:padding="10dp"
+      android:layout_height="wrap_content" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycleView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+</LinearLayout>
